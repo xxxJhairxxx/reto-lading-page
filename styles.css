@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+*/
+body {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  font-family: "Alata", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #fff;
+}
+header nav {
+  margin: auto;
+  margin-top: 5%;
+  width: 85%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+header nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header nav .menu {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: space-evenly;
+}
+.menu a {
+  margin: 0;
+  padding: 0 5%;
+  color: #fff;
+  text-decoration: none;
+}
+
+header .titulo-portada {
+  border: #fff solid 2px;
+  padding: 3%;
+  margin: 8%;
+  margin-right: auto;
+  width: 40%;
+  justify-self: end;
+  font-size:4em;
+  font-family: "Josefin Sans", sans-serif;
+  @media(max-width: 800px){
+    width: 84%;
+    margin: 8% auto
+  }
+}
+
+.hvr-underline-from-center {
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #fff;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+/*main*/
+.main-container {
+  width: 80%;
+  padding: 10%;
+}
+
+.section1 {
+  height: 550px;
+}
+.section1-div {
+  width: 450px;
+  height: 350px;
+  background-color: white;
+  position: relative;
+  bottom: 350px;
+  left: 60%;
+}
+.centrar {
+  padding-top: 120px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: end;
+}
+
+.centrar h2 {
+  font-weight: 400;
+  font-family: "Alata", sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.centrar p {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 25px;
+  font-size: 12px;
+}
+/*Section 2*/
+.section2 {
+  max-width: 100%;
+}
+.section2 h2 {
+  font-weight: 400;
+  font-family: "Alata", sans-serif;
+  font-size: 45px;
+}
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button button {
+  width: 120px;
+  padding: 10px;
+  color: white;
+  background-color: black;
+}
+.button button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+.div-section2 {
+  display: flex;
+  max-width: 1100px;
+  justify-content: center;
+}
+.cards {
+  width: 100%;
+  height: 420px;
+}
+.cards img {
+  width: 220px;
+}
+.color-negro {
+  color: black;
+}
+.span {
+  color: white;
+}
+.cards span {
+  font-weight: 300;
+  font-family: "Alata", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  position: relative;
+  left: 50px;
+  bottom: -350px;
+}
+
+/*footer*/
+footer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+  padding: 5% 10%;
+}
+.nav-footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 50%;
+}
+.footer-menu {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+.logo p {
+  font-family: "Alata", sans-serif;
+  font-size: 30px;
+  text-align: left;
+}
+.footer-menu li {
+  font-family: "Alata", sans-serif;
+  margin-right: 20px;
+  list-style: none;
+  align-items: center;
+}
+.footer-redes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 40%;
+}
+.logo-redes {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  margin-right: 15%;
+}
+.logo-redes img {
+  margin: 5px;
+}
+.footer-description {
+  font-family: "Alata", sans-serif;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  margin-top: 10px;
+  margin-right: 15%;
+}
+/*login*/
+.contenedor-login {
+  padding: 5% 0;
+  width: 100%;
+}
+
+.login {
+  background: rgb(26, 67, 163);
+  background: linear-gradient(
+    90deg,
+    rgb(17, 60, 161) 0%,
+    rgba(255, 0, 78, 1) 100%
+  );
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 15%;
+  margin: auto;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 10px;
+}
+
+.login .perfil-image {
+  width: 50%;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.login .perfil-image img {
+  width: 100%;
+  filter: invert(100%);
+  filter: opacity(70%);
+}
+
+.login form {
+  width: 100%;
+  margin: 10% auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  font-size: 10px;
+}
+
+.login form input[type="text"],
+.login form input[type="password"] {
+  width: 90%;
+  padding: 7px;
+  margin: 3% auto;
+  border: none;
+  border-radius: 5px;
+
+  font-size: 10px;
+}
+
+.login form input[type="cheakbox"] {
+  width: 10%;
+  margin-top: 10%;
+  margin-right: 4%;
+
+  font-size: 10px;
+}
+.login form label {
+  width: 30%;
+  margin-left: 4%;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  font-size: 10px;
+}
+
+.login form button {
+  padding: 10px;
+  width: 90%;
+  margin: 5% auto;
+  border: 0;
+  border-radius: 5px;
+  background: rgb(27, 60, 211);
+  color: #fff;
+  font-size: 10px;
+}
